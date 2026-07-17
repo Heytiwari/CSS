@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner1 {
+    /* background: conic-gradient(#F47379, #CA9ACB, #A48FF4, #D6A8FF, #F47379); */
+    background: url(../images/cid.avif), purple;
+    height: 1020px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+
+.banner2 {
+    background: url("https://hips.hearstapps.com/hmg-prod/images/mh-marvel-ranked-6818ed53874b9.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner3 {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJoJLYND2S_EYEsqsM9Ah77WQyKLZrtj-Nqa67Pms-wLG-fYPyF8vzmiw&s=10");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner4 {
+    background: url("https://www.denofgeek.com/wp-content/uploads/2025/02/Cyclops-Doomsday.jpg?resize=768%2C432");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

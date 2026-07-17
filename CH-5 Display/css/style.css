@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(68deg, #4F1EAB, #9811A4, #E2059C);
+    margin: 20px;
+    border-radius: 28% 72% 19% 81% / 78% 18% 82% 22%;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 150px; */
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    display: block;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+    display: inline-block;
+    padding: 50px;
+}
+
+.box1 {
+    height: 400px;
+    width: 350px;
+    background-color: #e7e7e7;
+    margin: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.box1 .img {
+    height: 250px;
+    width: 250px;
+    background: url("https://media-ik.croma.com/Croma%20Assets/Communication/Mobiles/Images/317432_0_8iVhHIsBIF.png?updatedAt=1757529382415");
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.box1 h2 {
+    color: black;
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+}
+
+.box1 p {
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.box2 {
+    height: 400px;
+    width: 350px;
+    background-color: #e7e7e7;
+    margin: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.box3 {
+    height: 400px;
+    width: 350px;
+    background-color: #e7e7e7;
+    margin: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.box4 {
+    height: 400px;
+    width: 350px;
+    background-color: #e7e7e7;
+    margin: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}

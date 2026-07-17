@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Object</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(325deg, orange, white, yellow);
+        }
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            float: right;
+            font-size: 35px;
+            text-align: center;
+            line-height: 100px;
+            color: aqua;
+        }
+
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            float: right;
+            font-size: 35px;
+            text-align: center;
+            line-height: 100px;
+            color: aqua;
+        }
+
+        .clear-flex {
+            clear: both;
+        }
+
+        img {
+            width: 500px;
+            height: 800px;
+            object-fit: cover;
+            object-position: -400px 0;
+            border: 5px solid brown;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="box1">&#9812</div>
+        <div class="box2">♕</div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+
+        <div class="clear-flex"></div>
+
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+
+        <div class="clear-flex"></div>
+
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+
+        <div class="clear-flex"></div>
+    </div>
+
+    <img src="https://www.planetcustodian.com/wp-content/uploads/2021/05/Animals-in-their-natural-environment-2.jpg"
+        alt="">
+
+</body>
+
+</html>
