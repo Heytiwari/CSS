@@ -33,9 +33,62 @@ div {
 } */
 
 
-div p {
+div>section>p {
     color: red;
     background-color: yellow;
     padding: 10px;
     margin: 10px;
+}
+
+h1::first-letter {
+    color: green;
+    font-size: 80px;
+}
+
+p::first-line {
+    color: red;
+    background-color: yellow;
+}
+
+ul {
+    padding-left: 50px;
+}
+
+/* li:first-child {
+    color: orange;
+    font-size: 50px;
+}
+
+li:last-child {
+    color: green;
+    font-size: 50px;
+} */
+
+li:nth-child(1) {
+    color: orange;
+}
+
+li:nth-child(2) {
+    color: red;
+}
+
+li:nth-child(3) {
+    color: skyblue;
+}
+
+li:nth-child(4) {
+    color: yellow;
+}
+
+li:nth-child(5) {
+    color: brown;
+    background-color: aqua
+}
+
+li:nth-child(6) {
+    color: green;
+}
+
+p::selection {
+    background-color: yellow;
 }
