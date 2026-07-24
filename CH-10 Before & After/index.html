@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before & After</title>
+    <style>
+      h1 {
+        position: relative;
+        width: max-content;
+      }
+      h1::after {
+        content: "";
+        height: 4px;
+        width: 0;
+        background: linear-gradient(to right, red, purple, blue);
+        border-radius: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width 1s ease-in-out;
+      }
+
+      h1:hover::after {
+        width: 100%;
+      }
+
+      button {
+        background-color: purple;
+        border: none;
+        color: #fff;
+        padding: 10px 25px;
+        border-radius: 100px;
+        transition: all 1s ease;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: black;
+        padding: 10px 35px;
+      }
+
+      .box {
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+        background-color: antiquewhite;
+        border: 1px solid black;
+        /* transition-property: all;
+        transition-duration: 3s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in-out; */
+        transition:
+          width 5s ease 2s,
+          background-color 3s ease-in 3s;
+      }
+
+      .box:hover {
+        width: 1000px;
+        background-color: aqua;
+      }
+
+      .box1 {
+        height: 50px;
+        width: 50px;
+        background-color: aquamarine;
+        cursor: pointer;
+        /* border-radius: 50%; */
+        border: 2px solid black;
+        transition: all 1s ease;
+        perspective: 1000px;
+      }
+
+      .box1:hover {
+        border: 2px dashed grey;
+        transform: rotate(160deg);
+
+        scale: 2;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Hello Jaynesh</h1>
+
+    <button>Submit</button>
+
+    <div class="box"></div>
+
+    <div class="box1"></div>
+  </body>
+</html>
