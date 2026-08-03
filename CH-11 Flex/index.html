@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        .container {
+            height: 800px;
+            background-color: beige;
+            border: 5px solid black;
+            padding: 5px;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            gap: 20px;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        #box {
+            height: 200px;
+            width: 200px;
+        }
+
+        .box1 {
+
+            background-color: rgb(166, 216, 216);
+            border: 1px solid black;
+            font-size: 30px;
+            text-align: center;
+            align-content: center;
+            margin: 2px;
+            order: 500;
+            flex-shrink: 4;
+            /* flex-grow: 1; */
+            flex-basis: 400px;
+            align-self: flex-end;
+        }
+
+        .box2 {
+
+            background-color: orange;
+            border: 1px solid black;
+            font-size: 30px;
+            text-align: center;
+            align-content: center;
+            margin: 2px;
+            /* flex-shrink: 10; */
+            /* flex-grow: 1; */
+        }
+
+        .box3 {
+
+            background-color: green;
+            border: 1px solid black;
+            font-size: 30px;
+            text-align: center;
+            align-content: center;
+            margin: 2px;
+            /* flex-grow: 2; */
+        }
+
+        .box4 {
+
+            background-color: pink;
+            border: 1px solid black;
+            font-size: 30px;
+            text-align: center;
+            align-content: center;
+            margin: 2px;
+            order: -10;
+            /* flex-grow: 5; */
+            align-self: flex-start;
+        }
+
+        .card {
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: -10px -10px 15px rebeccapurple,
+                /* Top-left Pink */
+                10px 10px 20px yellow;
+            /* Bottom-right Cyan */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box" class="box1">01</div>
+        <div id="box" class="box2">02</div>
+        <div id="box" class="box3">03</div>
+        <div id="box" class="box4">04</div>
+    </div>
+
+
+    <div class="card">
+
+    </div>
+</body>
+
+</html>
