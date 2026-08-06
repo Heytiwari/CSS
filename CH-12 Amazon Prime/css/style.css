@@ -29,6 +29,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .nav-bar {
@@ -95,17 +96,118 @@ nav {
     box-shadow: 0 -5px 25px #4facf7;
 }
 
+.divider {
+    height: 20px;
+    width: 2px;
+    background-color: grey;
+    margin: 0 5px;
+}
+
 .hero {
     height: 100vh;
     width: 100%;
     background-image: url('https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_TheDevilsMouth/3b3167cd-456f-4bb8-83ce-1fc8451af4dd._UR3840,1440_SX2880_FMavif_PQ65_.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.nav-bar .divider {
-    height: 30px;
-    width: 10px;
+.hero-section {
+    height: 80%;
+    width: 94%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    gap: 20px;
+    transition: all 10s cubic-bezier(0.42, 0, 0.97, 0.61);
+}
+
+.hero-section:hover .hero-description {
+    max-height: 200px;
+    visibility: visible;
+    /* transform: translateY(0); */
+}
+
+.hero-prime-original {
+    width: 112px;
+}
+
+.hero-prime-movie {
+    width: 372px;
+}
+
+.hero-rank {
+    display: flex;
+    color: #34E39A;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero-description {
+    max-height: 0;
+    width: 600px;
+    font-size: 20px;
+    visibility: hidden;
+    /* transform: translateY(20px); */
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    /* opacity: 0; */
+}
+
+.hero-group-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-join-prime-btn {
+    width: 142px;
+    height: 60px;
+    padding: 5px 0;
+    background-color: #33363D;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
     margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.hero-join-prime-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.hero-add-btn,
+.hero-info-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #33363D;
+    font-size: 25px;
+    color: white;
+    scale: 1;
+    transition: all 0.3s ease;
+}
+
+.hero-add-btn:hover,
+.hero-info-btn:hover {
+    background-color: white;
+    color: black;
+    scale: 1.2;
+}
+
+
+.ri-shopping-bag-fill {
+    color: #FFD62C;
+    margin-right: 5px;
 }
