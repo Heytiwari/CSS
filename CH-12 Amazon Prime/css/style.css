@@ -30,6 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
+    z-index: 55;
 }
 
 .nav-bar {
@@ -62,6 +63,46 @@ nav {
 .right-nav {
     display: flex;
     align-items: center;
+}
+
+.right-nav {
+    position: relative;
+}
+
+.language-box {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+
+    top: 100px;
+    right: 0;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    height: 500px;
+    width: 650px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    /* visibility: hidden; */
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+
+.language-box span {
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.language:hover+.language-box {
+    /* visibility: visible; */
+    opacity: 1;
+}
+
+.language-box span:hover {
+    background-color: white;
+    color: black;
 }
 
 .nav-bar img {
@@ -117,6 +158,7 @@ nav {
 .hero-section {
     height: 80%;
     width: 94%;
+    position: relative;
     color: white;
     display: flex;
     flex-direction: column;
@@ -184,7 +226,6 @@ nav {
     background-color: white;
     color: black;
 }
-
 
 .hero-add-btn,
 .hero-info-btn {
