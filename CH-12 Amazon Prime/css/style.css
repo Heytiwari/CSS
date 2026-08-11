@@ -73,9 +73,8 @@ nav {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-
     top: 100px;
-    right: 0;
+    right: 50px;
     color: white;
     font-weight: 600;
     border-radius: 15px;
@@ -86,8 +85,13 @@ nav {
     align-items: center;
     justify-items: center;
     /* visibility: hidden; */
-    opacity: 1;
+    opacity: 0;
     transition: all 0.3s ease-in;
+}
+
+.all-language {
+    position: relative;
+    z-index: 555;
 }
 
 .language-box span {
@@ -95,9 +99,11 @@ nav {
     border-radius: 5px;
 }
 
-.language:hover+.language-box {
+nav:has(.language:hover)+.all-language .language-box,
+.all-language:has(.language-box:hover) .language-box {
     /* visibility: visible; */
     opacity: 1;
+    position: fixed;
 }
 
 .language-box span:hover {
@@ -145,14 +151,15 @@ nav {
 }
 
 .hero {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url('https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_TheDevilsMouth/3b3167cd-456f-4bb8-83ce-1fc8451af4dd._UR3840,1440_SX2880_FMavif_PQ65_.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    background-position: right;
 }
 
 .hero-section {
@@ -251,4 +258,54 @@ nav {
 .ri-shopping-bag-fill {
     color: #FFD62C;
     margin-right: 5px;
+}
+
+.movie {
+    color: white;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie-content {
+    display: flex;
+    gap: 20px;
+}
+
+.movie-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.17em;
+    font-weight: 600;
+}
+
+.kids-movie-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.kids-movie img {
+    height: 180px;
+    width: 340px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.kids-movie img:hover {
+    transform: scale(1.2)
+}
+
+.first,
+.last {
+    transition: all 0.3s ease-in-out;
+}
+
+.first:hover {
+    transform: translateX(40px);
+}
+
+.last:hover {
+    transform: translateX(-40px);
 }
