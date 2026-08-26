@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.w-1 {
+    width: 100%;
+}
+
+.box {
+    height: 300px;
+    background-color: black;
+}
+
+.w-1:nth-child(2) .box {
+    background-color: red;
+}
+
+.w-1:nth-child(3) .box {
+    background-color: purple;
+}
+
+.w-1:nth-child(4) .box {
+    background-color: pink;
+}
+
+.w-1:last-child .box {
+    background-color: aqua;
+}

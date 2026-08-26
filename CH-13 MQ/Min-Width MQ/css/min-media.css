@@ -1,0 +1,29 @@
+@media(min-width :576px) {
+    .w-sm-2 {
+        width: 50%;
+    }
+}
+
+@media(min-width :768px) {
+    .w-md-3 {
+        width: 33.33%;
+    }
+}
+
+@media(min-width :992px) {
+    .w-lg-2 {
+        width: 50%;
+    }
+}
+
+@media(min-width :1200px) {
+    .w-xl-4 {
+        width: 25%;
+    }
+}
+
+@media(min-width :1400px) {
+    .w-xxl-5 {
+        width: 20%;
+    }
+}
