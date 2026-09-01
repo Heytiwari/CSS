@@ -50,6 +50,7 @@ nav {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    font-size: 18px;
 }
 
 .nav-bar a:hover {
@@ -308,4 +309,35 @@ nav:has(.language:hover)+.all-language .language-box,
 
 .last:hover {
     transform: translateX(-40px);
+}
+
+.nav-bar-second {
+    display: none;
+}
+
+.nav-bar-md {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: #00050D;
+    position: fixed;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.nav-bar-md img {
+    height: 18px;
+}
+
+.nav-bar-md .lang {
+    display: flex;
+}
+
+.nav-bar-md a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
